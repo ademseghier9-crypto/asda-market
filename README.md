@@ -1,1 +1,141 @@
-# asda-market
+# asda-<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أسدا ماركت | سوبر ماركت مفتوح 24/24</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800;900&display=swap">
+<style>
+:root{--bg:#F5F7F4;--ink:#14231A;--mut:#56655A;--card:#fff;--line:#DCE3DC;--g:#0E6B3C;--gd:#0A4A2A;--r:#C8281E;--sun:#F5B700;--cho:#4A2A1A;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1712;--ink:#E9F0EA;--mut:#9DB0A1;--card:#17221B;--line:#26352B;--g:#2FA866;--gd:#0A2416}}
+:root[data-theme="dark"]{--bg:#0F1712;--ink:#E9F0EA;--mut:#9DB0A1;--card:#17221B;--line:#26352B;--g:#2FA866;--gd:#0A2416}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Tajawal",Tahoma,"Segoe UI",sans-serif;line-height:1.7;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+.logo{font-weight:900;font-size:21px;text-decoration:none;color:var(--g)}
+nav{display:flex;gap:16px;overflow-x:auto;font-weight:500;font-size:15px}
+nav a{text-decoration:none;white-space:nowrap;color:var(--mut)}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.hero{background:var(--gd);color:#fff;padding:44px 0 48px}
+.hero h1{margin:0 0 6px;font-size:clamp(34px,8vw,58px);font-weight:900;line-height:1.15}
+.hero p{margin:0 0 24px;color:#cfe5d6;max-width:34ch}
+.sign{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.sign div{background:var(--sun);color:#1b1500;border-radius:10px;padding:6px 20px;font-weight:900;font-size:clamp(34px,9vw,60px);line-height:1.2;direction:ltr;box-shadow:0 0 0 4px var(--gd),0 0 0 6px var(--sun)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:800;text-decoration:none;font-size:16px}
+.btn.p{background:#fff;color:var(--gd)}
+.btn.s{border:2px solid #fff;color:#fff}
+section{padding:42px 0}
+h2{font-size:28px;margin:0 0 6px;font-weight:900}
+.sub{color:var(--mut);margin:0 0 22px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px}
+.tabs button{font:inherit;font-weight:500;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 16px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.tabs button[aria-pressed="true"]{background:var(--g);border-color:var(--g);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:2px}
+.pic{height:76px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:42px;margin-bottom:8px}
+.item b{font-weight:500;font-size:16px;line-height:1.4}
+.item small{color:var(--mut);font-size:14px}
+.price{margin-top:6px;font-weight:900;font-size:20px;color:var(--g)}
+.price span{font-size:14px;font-weight:500;color:var(--mut)}
+.note{font-size:14px;color:var(--mut);margin-top:16px}
+.fri{background:var(--cho);color:#fff}
+.fri .sub{color:#e6cdb9}
+.badge{display:inline-block;background:var(--sun);color:#1b1500;font-weight:900;border-radius:6px;padding:2px 12px;font-size:15px;margin-bottom:10px}
+.fri .item{background:#5C3623;border-color:#7A4B32}
+.fri .item small{color:#e6cdb9}
+.fri .price{color:var(--sun)}
+.old{text-decoration:line-through;color:#e6cdb9;font-weight:500;font-size:15px;margin-inline-start:6px}
+.hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.hours div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:flex;justify-content:space-between;gap:8px}
+.hours em{font-style:normal;color:var(--g);font-weight:800}
+.contact{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.box h3{margin:0 0 6px;font-size:19px}
+.box p{margin:0 0 12px;color:var(--mut)}
+.box .btn{background:var(--g);color:#fff}
+.ph{direction:ltr;unicode-bidi:embed;font-weight:900;font-size:24px;display:block;margin-bottom:12px}
+footer{padding:26px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-align:center}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top">🛒 أسدا ماركت</a>
+<nav><a href="#prices">الأسعار</a><a href="#friday">عروض الجمعة</a><a href="#hours">أوقات العمل</a><a href="#contact">اتصل بنا</a></nav>
+</div></header>
+ 
+<div class="hero" id="top"><div class="wrap">
+<div class="sign" aria-label="مفتوح 24 ساعة على 24، 7 أيام على 7"><div>24/24</div><div>7/7</div></div>
+<h1>أسدا ماركت</h1>
+<p>سوبر ماركت جزائري مفتوح ليلاً ونهاراً، كل أيام الأسبوع. منتجات محلية ومستوردة بأسعار مناسبة.</p>
+<div class="btns"><a class="btn p" href="tel:0782914617">اتصل: 0782914617</a><a class="btn s" href="#prices">شاهد الأسعار</a></div>
+</div></div>
+ 
+<section id="prices"><div class="wrap">
+<h2>أسعار المنتجات</h2>
+<p class="sub">اختر القسم لتشاهد المنتجات وأسعارها بالدينار الجزائري.</p>
+<div class="tabs" id="tabs" role="group" aria-label="أقسام المنتجات"></div>
+<div class="grid" id="grid"></div>
+<p class="note">الأسعار تقريبية للاستئناس وقد تتغير حسب الوزن والعلامة التجارية. اتصل بالمتجر للتأكد من السعر الحالي.</p>
+</div></section>
+ 
+<section id="friday" class="fri"><div class="wrap">
+<span class="badge">يوم الجمعة فقط</span>
+<h2>عروض الشكلاطة</h2>
+<p class="sub">تخفيضات خاصة على الشكلاطة كل يوم جمعة.</p>
+<div class="grid" id="choc"></div>
+</div></section>
+ 
+<section id="hours"><div class="wrap">
+<h2>أوقات العمل</h2>
+<p class="sub">المتجر مفتوح 24 ساعة على 24، طوال أيام الأسبوع.</p>
+<div class="hours" id="days"></div>
+</div></section>
+ 
+<section id="contact"><div class="wrap">
+<h2>اتصل بنا</h2>
+<p class="sub">للاستفسار عن المنتجات والأسعار.</p>
+<div class="contact">
+<div class="box"><h3>رقم الهاتف</h3><a class="ph" href="tel:0782914617">0782914617</a><a class="btn" href="tel:0782914617">اتصل الآن</a></div>
+<div class="box"><h3>واتساب</h3><p>راسلنا على نفس الرقم.</p><a class="btn" href="https://wa.me/213782914617">افتح واتساب</a></div>
+<div class="box"><h3>الموقع على الخريطة</h3><p>ابحث عن «asda market» في قوقل ماب لمعرفة العنوان.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=asda+market+Algeria">افتح قوقل ماب</a></div>
+</div>
+</div></section>
+ 
+<footer><div class="wrap">© أسدا ماركت — سوبر ماركت جزائري مفتوح 24/24</div></footer>
+ 
+<script>
+var D=[
+["بقوليات",[
+["عدس","🫘","500 غ",100,"#F3E3C3"],["حمص","🫘","500 غ",110,"#F5E6B8"],["فاصوليا بيضاء","🫘","500 غ",120,"#EEE9DC"],
+["لوبيا","🫘","500 غ",85,"#EBDDC4"],["فول مجروش","🫘","500 غ",70,"#D9E6C3"],["بازلاء يابسة","🫛","500 غ",50,"#CFE5C0"]]],
+["مشروبات غازية",[
+["حمود بوعلام","🥤","33 cl",40,"#FBE3A8"],["سيلكتو","🥤","50 cl",60,"#F9D8C2"],["سيلكتو","🥤","1 لتر",90,"#F9D8C2"],
+["كوكا كولا","🥤","1.25 لتر",120,"#F4C9C5"],["فانتا","🥤","1.5 لتر",140,"#FBD9A0"],["سبرايت","🥤","2 لتر",160,"#CFEBD3"]]],
+["منتجات جزائرية",[
+["سميد","🌾","1 كغ",55,"#F5E6B8"],["سكر","🧂","1 كغ",100,"#EEF1F4"],["حليب","🥛","1 لتر",110,"#E3EEF8"],
+["معجون الطماطم","🍅","400 غ",150,"#F7CFCB"],["تمر دقلة نور","🌴","500 غ",350,"#E8D2B6"],["عصير","🧃","1 لتر",130,"#FBE3A8"]]],
+["منتجات مستوردة",[
+["شكلاطة للدهن","🍫","350 غ",650,"#E5CDBB"],["جبن مثلثات","🧀","8 قطع",260,"#FBEFB5"],["معكرونة","🍝","500 غ",170,"#F7E8B9"],["زيت زيتون","🫒","500 مل",900,"#DCE5B8"]]]
+];
+var C=[["شكلاطة بالحليب","🍫","100 غ",160,120],["شكلاطة بالبندق","🍫","100 غ",190,150],["بيض الشكلاطة","🥚","20 غ",90,70],["أصابع الشكلاطة","🍫","4 قطع",140,110],["كريمة الشكلاطة","🍫","350 غ",650,520],["بسكويت بالشكلاطة","🍪","200 غ",120,95]];
+var cur=0,tabs=document.getElementById("tabs"),grid=document.getElementById("grid");
+function pic(e,c){return '<div class="pic" style="background:'+c+'" aria-hidden="true">'+e+'</div>'}
+function render(){
+ tabs.innerHTML="";
+ D.forEach(function(d,i){var b=document.createElement("button");b.textContent=d[0];b.setAttribute("aria-pressed",i===cur);b.onclick=function(){cur=i;render()};tabs.appendChild(b)});
+ grid.innerHTML=D[cur][1].map(function(p){return '<div class="item">'+pic(p[1],p[4])+'<b>'+p[0]+'</b><small>'+p[2]+'</small><div class="price">'+p[3]+' <span>دج</span></div></div>'}).join("");
+}
+render();
+document.getElementById("choc").innerHTML=C.map(function(p){return '<div class="item">'+pic(p[1],"#7A4B32")+'<b>'+p[0]+'</b><small>'+p[2]+'</small><div class="price">'+p[4]+' <span>دج</span><span class="old">'+p[3]+'</span></div></div>'}).join("");
+document.getElementById("days").innerHTML=["السبت","الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة"].map(function(d){return '<div>'+d+'<em>24 ساعة</em></div>'}).join("");
+</script>
+</body>
+</html>
+ 
